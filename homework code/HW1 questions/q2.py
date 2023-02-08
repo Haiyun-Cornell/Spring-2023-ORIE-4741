@@ -93,9 +93,9 @@ def get_support_vectors(x, y, w, b, eps=1e-3):
     :param w, b: y=sign(wx+b) is the decision boundary
     :param eps: a==b if |a-b| < eps
     :return positive_vectors: support vectors for positive examples
-    :return positive_boundary: (w, b) for positive examples
+    :return positive_boundary (margin line where the positive support vectors lie on): (w, b) for positive examples
     :return negative_vectors: support vectors for negative examples
-    :return negative_boundary: (w, b) for the negative examples
+    :return negative_boundary (margin line where the negative support vectors lie on): (w, b) for the negative examples
     """
     # TODO Q2(b):
     negative_vectors = []
