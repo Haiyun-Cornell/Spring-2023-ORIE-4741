@@ -1,3 +1,3 @@
-Project Name: [Airbnb Review Efficacy](https://github.com/sr795937/Airbnb_review_efficacy.git)
+Project Name: [The name of your project](The url of the repository)
 
 Group Members: Name (NetID), Name (NetID), Name (NetID)
