@@ -17,24 +17,31 @@ def solve_SVM_primal(x, y, regularization=None):
     # TODO Q2(a):
     # step 1: convert the input so we can get offset
     # TODO: pad the input
+    pad = np.concatenate((x, np.ones((N,1))), axis=1)
+    y = -y.reshape(-1, 1)
 
     # step 2: formalize the problem
     # TODO: prepare input for the cvxopt solver
+
     # tutorial: https://courses.csail.mit.edu/6.867/wiki/images/a/a7/Qp-cvxopt.pdf
     if regularization is None:
         # Q2(a)
-        pass
+        p = cvxopt_matrix(np.eye(m+1),tc='d')
+        q = cvxopt_matrix(np.zeros(m+1),tc='d')
+        g = cvxopt_matrix(y*pad,tc='d')
+        h = cvxopt_matrix(-np.ones(N),tc='d')
     else:
         # Q2(c)
         pass
 
     # step 3: solve the problem using cvxopt
     # TODO: call the cvxopt solver
+    sol = cvxopt_solvers.qp(p,q,g,h)
 
     # step 4: convert the result and return
     # TODO: get the w and b from the solver's solution
-    w = np.zeros(m)
-    b = 0.0
+    w = sol['x'][:-1]
+    b = sol['x'][-1]
     print(f'weights: {w}; bias: {b}')
     return w, b
 
@@ -100,8 +107,29 @@ def get_support_vectors(x, y, w, b, eps=1e-3):
     # TODO Q2(b):
     negative_vectors = []
     positive_vectors = []
-    positive_boundary = (w, b)
-    negative_boundary = (w, b)
+    positive_boundary = (w,b)
+    negative_boundary = (w,b)
+
+    n = len(x)
+    for i in range(n):
+        yi, xi = y[i], x[i]
+        prediction = np.dot(w.T,xi) + b
+        diff = abs(yi * prediction - 1)
+        if diff < eps:
+            if yi == -1:
+                negative_vectors.append(xi,y-np.dot(w.T,xi))
+            else:
+                positive_vectors.append(xi)
+
+        return np.array(positive_vectors), positive_boundary, np.array(negative_vectors), negative_boundary
+
+
+
+
+
+
+
+
 
     return positive_vectors, positive_boundary, \
         negative_vectors, negative_boundary
