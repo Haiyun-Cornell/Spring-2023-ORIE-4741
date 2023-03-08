@@ -1,4 +1,5 @@
 Project Name: [The name of your project](The url of the repository)
+Project Name: [The name of your project](www.google.com)
 
 Project type: Data analysis/Algorithm development/Theoretical project
 
