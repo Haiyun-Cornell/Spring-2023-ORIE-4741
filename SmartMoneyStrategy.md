@@ -1,4 +1,4 @@
-Project Name: [SmartMoneyStrategy](The url of the repository)
+Project Name: [SmartMoneyStrategy](https://github.com/yuyuCornell/SmartMoneyStrategy.git)
 
 Project type: Data analysis
 
