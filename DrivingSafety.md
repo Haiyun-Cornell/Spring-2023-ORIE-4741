@@ -2,6 +2,6 @@ Project Name: [Driving Safety in the United States](https://github.com/bradychyl
 
 Project Type: Data Analysis
 
-Group Members: Name (NetID), Name (NetID), Name (NetID)
+Group Members: Brady Chyla (bmc227), Michael Farkouh (mtf55)
 
 Course Code: 4741
