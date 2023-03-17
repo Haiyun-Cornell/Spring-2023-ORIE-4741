@@ -1,4 +1,4 @@
-Project Name: [SmartMoneyStrategy](https://github.com/yuyuCornell/Spring-2023-ORIE-4741.git)
+Project Name: [SmartMoneyStrategy](https://github.com/yuyuCornell/SmartMoneyStrategy.git)
 
 Project type: Data analysis
 
