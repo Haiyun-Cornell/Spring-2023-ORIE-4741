@@ -1,4 +1,4 @@
-Project Name: Criminal Parole and Recidivation Prediction (https://github.com/AlaiaCCY/2023Spring_ORIE5741_CriminalPrediction)
+Project Name: [Criminal Parole and Recidivation Prediction](https://github.com/AlaiaCCY/2023Spring_ORIE5741_CriminalPrediction)
 
 Project type: Data analysis project
 
