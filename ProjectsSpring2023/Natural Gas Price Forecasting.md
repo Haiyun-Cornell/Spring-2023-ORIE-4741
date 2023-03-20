@@ -1,4 +1,4 @@
-Project Name: Natural Gas Price Forecasting
+Project Name: [Natural Gas Price Forecasting](https://github.com/yahanxu/Team-2.git)
 
 Project type: Data analysis
 
