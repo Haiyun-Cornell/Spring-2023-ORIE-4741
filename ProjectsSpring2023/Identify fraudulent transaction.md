@@ -1,4 +1,4 @@
-Project Name: [Identify fraudulent transaction](The url of the repository)
+Project Name: [Identify fraudulent transaction]([The url of the repository](https://github.com/QixuanZhang-Cornell/Identify-fraudulent-transaction))
 
 Project type: Data analysis
 
